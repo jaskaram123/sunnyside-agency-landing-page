@@ -1,0 +1,531 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+/* setting variables */
+li{
+    cursor: pointer;
+}
+:root{
+    --softred: hsl(7,99%,70%);
+    --Yellow:  hsl(51, 100%, 49%);
+    --darkdesaturatedcyan: hsl(167, 40%, 24%);
+    --darkblue: hsl(198, 62%, 26%);
+    --darkmoderatecyan: hsl(168, 25%, 48%);
+    --verydarkdesaturatedblue: hsl(212, 27%, 19%);
+    --verydarkgrayishblue: hsl(213, 9%, 39%);
+    --darkgrayishblue: hsl(232, 10%, 55%);
+    --grayishblue: hsl(210, 4%, 67%);
+    --whitealpha: hsla(0, 0%, 100%, 0.52);
+    --white: white;
+    --softblue: #3DBEFF;
+    --bodysize: 18px;
+    --lightwt: 600;
+    --medwt: 700;
+    --heavywt: 900;
+    --barlow: 'Barlow', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+body{
+    min-height: 100%;
+}
+.areal{
+    font-family:var(--fraunces);
+    color: var(--darkgrayishblue);
+    margin-bottom: 4em;
+}
+/* styling header */
+/* styling nav bar */
+header{
+    background: url(images/icon-arrow-down.svg) no-repeat center,url(images/desktop/image-header.jpg) no-repeat center center/cover;
+    min-height: 629px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.tabs{
+    display: flex;
+    list-style: none;
+    max-width: 50em;
+    width: 40em;
+    justify-content: space-between;
+}
+
+.tabs li{
+    padding: 0.8em 1.8em;
+    margin: 0 0.8em;
+    border-radius: 50px;
+    width: 7.7em;
+    text-align: center;
+}
+
+.tabs li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.tabs li:hover{
+    background-color: var(--whitealpha);
+    text-transform: uppercase;
+    font-family:var(--fraunces);
+}
+
+.header{
+    text-align: center;
+    position: relative;
+    top: 3em;
+    font-size: 1.6em;
+    color: var(--white);
+    font-family: var(--fraunces);
+    z-index: 0;
+}
+
+/* styling navbar and header ends */
+/* styling first section */
+
+.reverse, .same{
+    display: flex;
+}
+
+
+
+.leftone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 7em 2em;
+
+}
+.one .left{
+    width: 50%;
+    font-family: var(--fraunces);
+}
+.content{
+    max-width: 29em;
+}
+.one .right{
+    width: 50%;
+}
+
+.backgroundegg{
+    background: url(images/desktop/image-transform.jpg) no-repeat center center/cover;
+}
+.one .left h2{
+    font-size: 2.5em;
+    padding-bottom: 1em;
+    width: 8em;
+}
+.one .left p{
+    font-family: var(--barlow);
+    padding-bottom: 2em;
+}
+
+.one .left a{
+   text-decoration: none;
+   color: black;
+   font-weight: 800;
+   position: relative;
+   font-size: 1.5rem;
+   width: fit-content;
+}
+
+.one .left a::before{
+    content: "";
+    width: 100%;
+    height: 9px;
+    border-radius: 50px;
+    position: absolute;
+    padding: 0 0.3em;
+    bottom: 0;
+    left: -6px;
+    z-index: -1;
+    background-color: var(--Yellow);
+}
+
+.leftsecond{
+    background: url(images/desktop/image-stand-out.jpg) no-repeat center center/cover;
+}
+
+.two .left .learnmoresecond::before{
+    content: "";
+    width: 100%;
+    height: 9px;
+    border-radius: 50px;
+    position: absolute;
+    padding: 0 0.3em;
+    bottom: 0;
+    left: -6px;
+    z-index: -1;
+    background-color: var(--softred);
+}
+
+.leftthird{
+    background: url(images/desktop/image-photography.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding: 3em;
+}
+.three{
+    display: flex;
+    height: 33em;
+}
+.three .leftfour{
+    background: url(images/desktop/image-graphic-design.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding: 3em;
+}
+
+.descr{
+    max-width: 25em;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.clients{
+    padding: 7em 0;
+}
+
+.clientdesc{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10em;
+}
+.clients .profile{
+    max-width: fit-content;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4em;
+}
+.clients .profile img{
+    border-radius: 100px;
+}
+
+.desc{
+    text-align: center;
+    margin-bottom: 3em;
+}
+.clientdesc .client{
+    max-width: 20em;
+}
+
+.name{
+    text-align: center;
+}
+
+.name h3{
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.name h5{
+    font-weight: 200;
+    color: var(--darkgrayishblue);
+}
+
+.foursec{
+    display: flex;
+}
+
+.foursec div{
+    height: 20em;
+    width: 25%;
+}
+
+.a{
+    background: url(images/desktop/image-gallery-milkbottles.jpg) no-repeat center center/cover;
+}
+.b{
+    background: url(images/desktop/image-gallery-orange.jpg) no-repeat center center/cover;
+}
+.c{
+    background: url(images/desktop/image-gallery-cone.jpg) no-repeat center center/cover;
+}
+.d{
+    background: url(images/desktop/image-gallery-sugarcubes.jpg) no-repeat center center/cover;
+}
+
+footer{
+    background-color: var(--darkmoderatecyan);
+}
+.logo{
+    padding: 2em;
+    display: flex;    
+    justify-content: center;
+}
+.links {
+    padding-bottom: 2em;
+}
+.links .tabsf{
+    display: flex;
+    list-style: none;
+    max-width: 16em;
+    width: 25em;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.links .tabsf li a{
+    color: var(--darkdesaturatedcyan);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.3em;
+}
+.links .tabsf li a:hover{
+    color: var(--white);
+}
+.socialmedia ul{
+    display: flex;
+    list-style: none;
+    width: 10em;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+.logo svg path{
+    fill: var(--darkdesaturatedcyan);
+}
+.socialmedia svg path{
+    fill: hsl(198, 62%, 26%);
+}
+.socialmedia li{
+    cursor: pointer;
+}
+.socialmedia li:hover svg path{
+    fill: var(--white);
+}
+
+.dnone{
+    display: none;
+}
+@media screen and (max-width: 900px) {
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0;
+    }
+    .navigation .left img{
+        display: block;
+        margin: 0 auto;
+    }
+    .one .left h2{
+        font-size: 2em;
+        padding-bottom: 0.8em;
+        width: 8em;
+    }
+    .one .left p{
+        font-family: var(--barlow);
+        padding-bottom: 1.5em;
+    }
+    
+    .one .left a{
+       text-decoration: none;
+       color: black;
+       font-weight: 800;
+       position: relative;
+       font-size: 1rem;
+       width: fit-content;
+    }
+    .clientdesc .client{
+        max-width: 20em;
+        margin: 2em;
+    }
+    .clientdesc{
+        margin: 0 4em;
+    }
+    .content{
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .one .left h2{
+        font-size: 1em;
+        padding-bottom: 0.4em;
+        max-width: 8em;
+    }
+    .one .left p{
+        font-size: 0.8em;
+        font-family: var(--barlow);
+        padding-bottom: 1em;
+    }
+    
+    .one .left a{
+       text-decoration: none;
+       color: black;
+       font-weight: 800;
+       position: relative;
+       font-size: 0.5rem;
+       width: fit-content;
+    }
+    .two .left .learnmoresecond::before{
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 50px;
+        position: absolute;
+        padding: 0 0.3em;
+        bottom: 0;
+        left: -3px;
+        z-index: -1;
+        background-color: var(--softred);
+    }
+    .one .left a::before{
+        content: "";
+        width: 100%;
+        height: 4px;
+        border-radius: 50px;
+        position: absolute;
+        padding: 0 0.3em;
+        bottom: 0;
+        left: -3px;
+        z-index: -1;
+        background-color: var(--Yellow);
+    }
+    .clients{
+        padding: 5em 0;
+    }
+    
+    .clientdesc{
+        margin: 0 4em;
+    }
+    .clients .profile{
+        margin-bottom: 2em;
+    }
+    .clients .profile img{
+        border-radius: 100px;
+    }
+    
+    .desc{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    .clientdesc .client{
+        max-width: 20em;
+        margin: 1em;
+    }
+    
+    .name{
+        text-align: center;
+    }
+    
+    .name h3{
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+    
+    .name h5{
+        font-weight: 200;
+        color: var(--darkgrayishblue);
+    }
+}
+.row{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+@media screen and (max-width: 650px) {
+    .clientdesc{
+        flex-direction: column;
+        align-items: center;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .same{
+        flex-direction: column;
+    }
+    .content h2{
+        margin: 0 auto;
+    }
+    .one .right{
+        width: 100%;
+        height: 21em;
+    }
+    .same .left, .reverse .left{
+        width: 100%;
+        text-align: center;
+    }
+    .three{
+        flex-direction: column;
+        width: 100%;
+    }
+    .three .left, .three .right{
+        width: 100%;
+        height: 100%;
+    }
+    .tabs{
+        flex-direction: column;
+    }
+    .tabs li{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .tabs li a{
+        color:  var(--softblue);
+        font-weight: 600;
+    }
+    .navigation{
+        position: fixed;
+        top: 0;
+        background: var(--softblue);
+    }
+    .navigation .right{
+        position: absolute;
+        top: 3em;
+        z-index: 100;
+        background-color: white;
+        border-radius: 1em;
+        width: 90%;
+        margin: 1em;
+    }
+    .navigation .left{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 2em;
+        box-sizing: border-box;
+    }
+    .navigation .right .tabs{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .leftone, .leftfour, .leftthird{
+        box-sizing: border-box;
+    }
+    .arrow{
+        position: absolute;
+        top: -29px;
+        right: 0px;
+        border: 2em solid transparent;
+        border-right: 2em solid #ffffff;
+    }
+    .hamburger{
+        cursor: pointer;
+    }
+}
